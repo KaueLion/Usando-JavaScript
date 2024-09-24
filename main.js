@@ -27,6 +27,11 @@ function criarEstrela() {
     }, 10000); // Tempo total para a estrela existir
 }
 
+// Cria várias estrelas inicialmente
+for (let i = 0; i < 50; i++) {
+    criarEstrela();
+}
+
 // Cria uma estrela a cada 500ms
 setInterval(criarEstrela, 500);
 
@@ -82,7 +87,7 @@ document.body.appendChild(novoElemento);
 novoElemento.style.position = 'absolute';
 novoElemento.style.top = '20px';
 novoElemento.style.left = '20px';
-novoElemento.style.color = 'white'; // Cor do texto
+novoElemento.style.color = 'black'; // Cor do texto alterada para preto
 novoElemento.style.fontSize = '24px';
 novoElemento.style.zIndex = '10'; // Coloca o texto acima dos círculos
 
